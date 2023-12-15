@@ -5,7 +5,7 @@ import Navbar from './component/navbar/navbar'
 function App() {
 
   return (
-    <div className=''>
+    <div className='relative'>
       <Navbar />
     </div>
       )
