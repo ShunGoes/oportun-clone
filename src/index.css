@@ -1,8 +1,9 @@
+@import url('https://fonts.cdnfonts.com/css/tt-commons');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
- @import url('https://fonts.cdnfonts.com/css/tt-commons');
 @layer components{
   .links{
     @apply md:text-[18px]  hover:border-b-4 py-3 h-4/5 hover:border-b-green-500 font-extrabold
