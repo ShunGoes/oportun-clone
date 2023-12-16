@@ -17,7 +17,7 @@ const Navbar = () => {
     }
 
     const handleMouseLeave = () => {
-        // setShowDropdown(false)
+        setShowDropdown(false)
     }
     
   return (
@@ -31,7 +31,7 @@ const Navbar = () => {
         </div>
         <div className=' px-5 flex justify-between k md:justify-evenly md:gap-20   '>
             <div className='flex gap-8 md:w-4/12  md:items-center'>
-                <h2 className="text-[30px] font-[700] md:text-[30px]">Oportun</h2>
+                <h2 className="text-[30px] font-[700] md:font-[600] md:text-[40px]">Oportun</h2>
                 <a href="#" className="hidden links md:block" onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter}>Loans  </a>
                 <a href="#" className="hidden links md:block" onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter}>Save  </a>  
                 <a href="#" className="hidden links md:block" onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter}>Credit cards  </a>
@@ -40,7 +40,7 @@ const Navbar = () => {
             <div className="md:w-4/12   hidden md:block ">
                 <div className="flex justify-end items-center gap-14 w-full h-full">
                     <a href="#" className="links" onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter}> Log in </a>
-                    <button className="bg-black text-[18px] no-underline flex justify-center items-center h-full p-3 times text-white rounded-[30px] w-[140px] hover:bg-white hover:text-black hover:border-black hover:border-2 hover:font-[800]  font-[600]"> Apply now </button>
+                    <button className="bg-black text-[18px] no-underline flex justify-center items-center h-4/5  times text-white rounded-[30px] w-[140px] hover:bg-white hover:text-black hover:border-black hover:border-2 hover:font-[800]  font-[600]"> Apply now </button>
                     <div className="flex items-center gap-3">
                         <IoGlobeOutline size={30}/>
                         <p className="links text-blue-500">Espanyol</p>
