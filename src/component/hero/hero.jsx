@@ -42,7 +42,7 @@ const Hero = () => {
 
       <div className="col-span-2  mb-[10rem] flex flex-col items-center gap-5 py-3">
         <div className="w-11/12 py-3 border-b-4 flex items-center">
-          <MdDataSaverOff size={30} className="w-2/12" />
+          <MdDataSaverOff size={25} className="w-2/12" />
           <div className=" w-10/12 ">
             <strong className="links">Save</strong>
             <p>For bills, repairs, deposits, and more</p>
@@ -53,7 +53,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="w-11/12 py-3 border-b-4 flex items-center">
-          <BsCreditCard2Back size={30} className="w-2/12" />
+          <BsCreditCard2Back size={25} className="w-2/12" />
           <div className=" w-10/12 ">
             <strong className="links">Credit Card</strong>
             <p>That helps you build credit</p>
