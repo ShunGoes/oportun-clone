@@ -84,7 +84,8 @@ const Dropown = ({ currentTab }) => {
   const array_of_keys = Object.keys(data);
   const position_of_elem = array_of_keys.indexOf(currentTab);
   const final_object = data[array_of_keys[position_of_elem]];
-  console.log(final_object);
+
+  
   return (
     <section className="h-[23rem] bg-black text-white  w-full  top top-[148px]  absolute hidden md:block">
       {final_object.name ? (
