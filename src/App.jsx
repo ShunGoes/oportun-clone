@@ -3,6 +3,7 @@ import './App.css'
 import Friend from './component/Friend/friend'
 import Hero from './component/hero/hero'
 import Navbar from './component/navbar/navbar'
+import Solution from './component/solution/solution'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <Friend />
+      <Solution />
     </div>
       )
 }

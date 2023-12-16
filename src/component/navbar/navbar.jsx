@@ -40,7 +40,7 @@ const Navbar = () => {
             <div className="md:w-4/12   hidden md:block ">
                 <div className="flex justify-end items-center gap-14 w-full h-full">
                     <a href="#" className="links" onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter}> Log in </a>
-                    <button className="bg-black text-[18px] no-underline flex justify-center items-center h-4/5  times text-white rounded-[30px] w-[140px] hover:bg-white hover:text-black hover:border-black hover:border-2 hover:font-[800]  font-[600]"> Apply now </button>
+                    <button className="btn text-[18px] h-4/5 w-[140px]"> Apply now </button>
                     <div className="flex items-center gap-3">
                         <IoGlobeOutline size={30}/>
                         <p className="links text-blue-500">Espanyol</p>

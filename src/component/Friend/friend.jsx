@@ -15,7 +15,7 @@ const Friend = () => {
 
   return (
     <section className="h-[30rem]   bg-black text-white flex flex-col justify-center items-center ">
-        <h3 className="text-[34px] font-[600] text-center leading-[37px]"> We've made some friends along the way </h3>
+        <h3 className="header-text"> We've made some friends along the way </h3>
         <div className=' w-10/12  h-[60%]'>
         <Swiper
         pagination={{

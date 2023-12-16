@@ -8,6 +8,12 @@
   .links{
     @apply md:text-[18px]  hover:border-b-4 py-3 h-4/5 hover:border-b-green-500 font-extrabold
   }
+  .header-text{
+    @apply text-[34px] font-[600] text-center leading-[37px]
+  }
+  .btn{
+    @apply bg-black  no-underline flex justify-center items-center   times text-white rounded-[30px]  hover:bg-white hover:text-black hover:border-black hover:border-2 hover:font-[800]  font-[600]
+  }
 }
                 
 *{
