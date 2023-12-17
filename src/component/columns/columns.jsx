@@ -1,6 +1,6 @@
 import React from "react";
 import Business from "../../assets/img1.webp";
-import Warning from "../../assets/img2.svg";
+import Warning from "../../assets/img2.webp";
 import CDFI from "../../assets/img3.webp";
 const Columns = () => {
   return (
@@ -17,7 +17,7 @@ const Columns = () => {
         </div>
         <div>
           <div className="rounded-2xl bg-white h-[10rem] border-4 flex justify-center items-center">
-            <img src={Warning} alt="business logo" className="-500 h-1/2 w-1/2" />
+            <img src={Warning} alt="business logo" className="-500 h-4/5 w-1/2" />
           </div>
           <p className="mt-[1.5rem] text-center">
             {" "}
@@ -26,7 +26,7 @@ const Columns = () => {
         </div>
         <div>
           <div className="rounded-2xl bg-white h-[10rem] border-4 flex justify-center items-center">
-            <div className="h-1/2 w-[50%] ">
+            <div className="h-4/5 w-[50%] ">
                 <img src={CDFI} alt="business logo" className=" w-full h-full object-contain " />
             </div>
           </div>
