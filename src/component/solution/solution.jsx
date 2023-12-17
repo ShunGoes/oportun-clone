@@ -27,7 +27,7 @@ const Solution = () => {
           {" "}
           Personal loans for all kinds of goals{" "}
         </h3>
-        <div className=" mb-[2rem] flex flex-col items-center gap-5 py-3  ">
+       '' <div className=" mb-[2rem] flex flex-col items-center gap-5 py-3  ">
           <div className="w-full py-3 h-full  flex items-center ">
             <RiFundsBoxLine size={25} className="w-2/12" />
             <div className=" w-10/12  ">
@@ -58,7 +58,6 @@ const Solution = () => {
             Learn More
           </button>
         </div>
-        <div className="border-4 flex w-11/12 mx-auto h-[10rem]"></div>
       </div>
     </section>
   );

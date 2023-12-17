@@ -2,7 +2,7 @@ import React from 'react'
 
 const Calculator = () => {
   return (
-    <section className='p-5 h-auto'>
+    <section className='p-5 h-auto my-[5rem]'>
         <div className="shadow-lg border-2 shadow-gray-400/60 h-full rounded-lg">
             <div className='p-5 h-[45%]  flex flex-col gap-4'>
                 <h3 className='text-[34px] font-[600]  leading-[37px]'> Loan Calculator</h3>
