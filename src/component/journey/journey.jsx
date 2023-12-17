@@ -4,7 +4,7 @@ import { IoMdSearch } from "react-icons/io";
 import { FaRegCircleQuestion } from "react-icons/fa6";
 import { GrLocation } from "react-icons/gr";
 
-import Friend from '../friend/friend';
+import Friend from '../../utils/friend/friend';
 
 const Journey = () => {
     const header_text = 'More tools to guide your journey'

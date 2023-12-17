@@ -1,4 +1,4 @@
-import Friend from '../friend/friend';
+import Friend from '../../utils/friend/friend';
 
 import { AiOutlineLike } from "react-icons/ai";
 import { RiEmotionHappyLine } from "react-icons/ri";
