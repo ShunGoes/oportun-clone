@@ -1,5 +1,4 @@
-import React from 'react'
-import Friend from '../friend/friend.jsx'
+import Friend from '../friend/friend';
 
 import { AiOutlineLike } from "react-icons/ai";
 import { RiEmotionHappyLine } from "react-icons/ri";
