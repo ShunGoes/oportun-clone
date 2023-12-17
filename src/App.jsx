@@ -26,7 +26,7 @@ function App() {
       <Section />
       <Columns />
       <Savvy />
-      <Journey />
+      {/* <Journey /> */}
     </div>
       )
 }
