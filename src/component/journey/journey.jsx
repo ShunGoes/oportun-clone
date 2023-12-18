@@ -10,13 +10,13 @@ const Journey = () => {
     const header_text = 'More tools to guide your journey'
     const arr_of_obj = [
         {
-            icon: <IoMdSearch size={40} color='blue'/> , text: "Learn about how to increase your income and plan for your future", topic:"Find jobs with help from Steady",id:1
+            icon: <IoMdSearch size={40} className='text-blue-500'/> , text: "Learn about how to increase your income and plan for your future", topic:"Find jobs with help from Steady",id:1
         },
         {
-            icon: <FaRegCircleQuestion size={40} color='blue'/>, text: "Understand your credit, financial plan, and more with free financial coaching", topic: "Get financial advice from UnidosUS", id: 2
+            icon: <FaRegCircleQuestion size={40} className='text-blue-500'/>, text: "Understand your credit, financial plan, and more with free financial coaching", topic: "Get financial advice from UnidosUS", id: 2
         },
         {
-            icon:<GrLocation size={40} color='blue'/>, text: "Locate local nonprofit and government programs providing financial support", topic:"Discover services through SpringFour", id: 3
+            icon:<GrLocation size={40} className='text-blue-500'/>, text: "Locate local nonprofit and government programs providing financial support", topic:"Discover services through SpringFour", id: 3
         }
     ]
   return (

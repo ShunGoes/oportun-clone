@@ -8,6 +8,7 @@ import Solution from './component/solution/solution'
 import Columns from './component/columns/columns'
 import Savvy from './component/savvy/savvy'
 import Journey from './component/journey/journey'
+import Sums from './component/sums/sums'
 
 
 import Section2 from './component/section2/section2'
@@ -26,7 +27,8 @@ function App() {
       <Section />
       <Columns />
       <Savvy />
-      {/* <Journey /> */}
+       <Journey /> 
+       <Sums />
     </div>
       )
 }

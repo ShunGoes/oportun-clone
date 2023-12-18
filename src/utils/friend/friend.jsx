@@ -20,8 +20,8 @@ const Friend = ({ header_text, arr_of_obj }) => {
           modules={[Pagination, Navigation]}
           className="h-full w-full "
         >
-          {arr_of_obj.map((obj) => (
-            <SwiperSlide className="h-4/5  w-full   flex flex-col justify-center items-center gap-3">
+          {arr_of_obj.map((obj,index) => (
+            <SwiperSlide key={index} className="h-4/5  w-full   flex flex-col justify-center items-center gap-3">
               <div>
 
               {obj.icon}

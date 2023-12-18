@@ -8,7 +8,7 @@ const Section2 = () => {
     const header_text = "We've made some friends along the way"
   const arr_of_obj = [
     {
-      icon: <AiOutlineLike size={40} color='blue' />, text: " 9 of 10 members would refer friends to Oportun", link: 'see more'
+      icon: <AiOutlineLike size={40} className="text-blue-500" />, text: " 9 of 10 members would refer friends to Oportun", link: 'see more'
     },
     {
       icon: <RiEmotionHappyLine size={40} color='blue' />, text: "75,000 reviews on Google and Truitpilot", link: "see more"
