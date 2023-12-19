@@ -11,10 +11,10 @@ const Section2 = () => {
       icon: <AiOutlineLike size={40} className="text-blue-500" />, text: " 9 of 10 members would refer friends to Oportun", link: 'see more'
     },
     {
-      icon: <RiEmotionHappyLine size={40} color='blue' />, text: "75,000 reviews on Google and Truitpilot", link: "see more"
+      icon: <RiEmotionHappyLine size={40} className='text-blue-500' />, text: "75,000 reviews on Google and Truitpilot", link: "see more"
     },
     {
-      icon: <PiCubeThin size={40} color='blue' />, text: "The whole process was extremely easy and plenty", link: "Claudia M From Google"
+      icon: <PiCubeThin size={40} className='text-blue-500' />, text: "The whole process was extremely easy and plenty", link: "Claudia M From Google"
     }
   ]
   return (

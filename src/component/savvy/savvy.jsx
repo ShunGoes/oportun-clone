@@ -44,11 +44,12 @@ const Savvy = () => {
     <section className="h-auto my-[3rem]  flex flex-col items-center px-1 py-5 gap-9">
       <h3 className="header-text"> Get savvy about money </h3>
 
-      <div className=" w-10/12  h-[40%] ">
+      {/* Swiper for smaller screens */}
+      <div className=" w-10/12 lg:hidden  h-[40%] lg:border-4 lg:border-red-500  ">
         <Swiper
           pagination={true}
           modules={[Pagination]}
-          className="h-full w-full"
+          className="h-full w-full "
         >
           {
             obj.map(({name,desc}) => (
@@ -63,13 +64,45 @@ const Savvy = () => {
               {" "}
               {desc}{" "}
             </a>
+            <div className="h-10"></div>
           </SwiperSlide>
             ))
           }
           
         </Swiper>
       </div>
-      <button className="h-[50px] w-10/12 bg-black text-white font-[700]  rounded-2xl  flex justify-center items-center">
+
+      {/* Swiper for large screens */}
+      <div className=" w-10/12 hidden lg:block h-[20rem]   ">
+        <Swiper
+        slidesPerView={3}
+          pagination={true}
+          modules={[Pagination]}
+          className="h-full  w-full  "
+        >
+          {
+            obj.map(({name,desc}) => (
+              <SwiperSlide key={name} className="h-full  w-full   flex flex-col justify-center items-center gap-7">
+            <div className=" h-4/6 w-11/12 rounded-3xl">
+              <img
+                src={name}
+                className="rounded-3xl w-full h-full object-cover"
+              />
+            </div>
+            <a href="#" className="text-blue-500 w-full text-center">
+              {" "}
+              {desc}{" "}
+            </a>
+            <div className="h-10">
+
+            </div>
+          </SwiperSlide>
+            ))
+          }
+          
+        </Swiper>
+      </div>
+      <button className="h-[50px] w-10/12 bg-black text-white font-[700]  rounded-2xl  flex justify-center items-center lg:w-3/12">
         {" "}
         View financial education{" "}
       </button>

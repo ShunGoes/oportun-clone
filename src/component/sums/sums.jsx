@@ -14,10 +14,10 @@ const Sums = () => {
   });
   return (
     <section className="h-auto  grid grid-cols-2">
-      <div className="col-span-2 ">
+      <div className="col-span-2 lg:col-span-1 ">
         <img src={SumsImg} className="object-cover" />
       </div>
-      <div className="col-span-2 mt-[1.5rem] px-5">
+      <div className="col-span-2 mt-[1.5rem] px-5 lg:col-span-1 lg:pl-[2rem] lg:py-[1rem]">
         <div className="mb-5">
           <h3 className="text-[34px] font-[600] mb-2 ">That sums it up</h3>
           <p className=" text-[17px]">

@@ -18,7 +18,7 @@ function App() {
   
 
   return ( 
-    <div className='relative'>
+    <div className='relative text-black'>
       <Navbar />
       <Hero />
       <Section2 />

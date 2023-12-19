@@ -7,16 +7,16 @@ import { TbMoneybag } from "react-icons/tb";
 
 const Section = () => {
   return (
-    <section className="h-auto mb-[8rem]  p-5">
-      <div>
+    <section className="h-auto mb-[8rem] lg:grid lg:grid-cols-2  p-5">
+      <div className="">
         <img
           src={SectionImg}
           alt=" download our app"
           className="object-cover"
         />
       </div>
-      <div className=" flex flex-col items-center mt-6">
-        <h3 className="text-[34px] font-[600]  leading-[37px]">
+      <div className=" flex flex-col items-center mt-6  lg:items-start lg:gap-4 lg:p-5 lg:justify-center">
+        <h3 className="text-[34px]  font-[600] lg:w-6/12 lg:text-[45px] lg:font-[800] leading-[37px]">
           {" "}
           Set & Save helps you save withhout thinking about it{" "}
         </h3>

@@ -6,13 +6,16 @@
 
 @layer components{
   .links{
-    @apply md:text-[18px]  hover:border-b-4 py-3 h-4/5 hover:border-b-green-500 font-extrabold
+    @apply lg:text-[25px]  py-3 h-4/5  font-extrabold 
+  }
+  .link{
+    @apply lg:text-[25px]  hover:border-b-4  h-4/5 hover:border-b-green-500 text-blue-500  
   }
   .header-text{
-    @apply text-[34px] font-[600] text-center leading-[37px]
+    @apply text-[34px] font-[600] text-center leading-[37px] lg:text-[45px] lg:font-[800]
   }
   .btn{
-    @apply bg-black  no-underline flex justify-center items-center   times text-white rounded-[30px]  hover:bg-white hover:text-black hover:border-black hover:border-2 hover:font-[800]  font-[600]
+    @apply bg-black  no-underline flex justify-center items-center text-white rounded-[30px]  hover:bg-white hover:text-black hover:border-black hover:border-2 hover:font-[800]  font-[600] lg:h-[80px] 
   }
 }
                 
