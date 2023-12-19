@@ -12,17 +12,18 @@
         opacity: 1;
     }
 }
+
 .nav-remove{
-    position: relative;
-    animation: slide-up .3s;
+    animation: slide-up .7s ease-in;
 }
 @keyframes slide-up{
     from{
-        transform: translateY(0);
+        position: fixed;
         opacity: 1;
     }
     to{
         transform: translateY(-100);
+        position: relative;
         opacity: 0;
     }
 }

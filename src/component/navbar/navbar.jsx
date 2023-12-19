@@ -18,10 +18,10 @@ const Navbar = () => {
     const handle_scroll = () => {
         const new_scroll_position = window.scrollY
         const nav_element = document.getElementById('nav')
-
+        
         if(new_scroll_position > last_scoll_position){
-            nav_element.classList.remove('nav')
             nav_element.classList.add('nav-remove')
+            nav_element.classList.remove('nav')
         }else if(new_scroll_position < last_scoll_position){
             nav_element.classList.add('nav')
             nav_element.classList.remove('nav-remove')
