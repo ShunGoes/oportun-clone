@@ -1,12 +1,35 @@
 import { IoGlobeOutline } from "react-icons/io5";
 import { LiaTimesSolid } from "react-icons/lia";
+
 import Dropown from "../nav-dropdown/dropdown";
+
 import { useState } from "react";
 
+import {RxHamburgerMenu} from 'react-icons/rx'
 
+import './navbar.css'
 const Navbar = () => {
     const [showDropdown,setShowDropdown] =  useState(false)
     const [currentTab,setCurrentTab] = useState('')
+
+    let last_scoll_position = window.scrollY
+
+    //  this function toggles between showing the navbar and hiding it depending on the scroll position
+    const handle_scroll = () => {
+        const new_scroll_position = window.scrollY
+        const nav_element = document.getElementById('nav')
+
+        if(new_scroll_position > last_scoll_position){
+            nav_element.classList.remove('nav')
+            nav_element.classList.add('nav-remove')
+        }else if(new_scroll_position < last_scoll_position){
+            nav_element.classList.add('nav')
+            nav_element.classList.remove('nav-remove')
+        }
+        last_scoll_position = new_scroll_position
+    }
+
+    window.addEventListener("scroll", handle_scroll)
 
 
     const handleMouseEnter = (e) => {
@@ -28,7 +51,7 @@ const Navbar = () => {
                 <LiaTimesSolid size={20} className="lg:hidden"/>
             </div>
         </div>
-        <div className=' px-5 flex justify-between  lg:px-[4rem]  lg:gap-20   '>
+        <div id="nav" className=' px-5 flex justify-between top-0  py-4 bg-white text-black lg:static z-10 w-full  lg:px-[4rem]  lg:gap-20   '>
             <div className='flex gap-8 lg:w-5/12  lg:items-center lg:border-2'>
                 <h2 className="text-[30px] font-[700] lg:font-[600] lg:text-[35px] lg:;pb-4">Oportun</h2>
                 <a href="#" className="hidden link lg:block" onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter}>Loans  </a>
@@ -46,7 +69,10 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <button className="border-2 lg:hidden flex justify-center items-center mr-7"> Get App </button>
+            <div className="flex gap-3 items-center">
+            <button className="border-2 lg:hidden flex justify-center  items-center mr-7"> Get App </button>
+            <RxHamburgerMenu size={30} />
+            </div>
         </div>
 
              {
