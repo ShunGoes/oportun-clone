@@ -2,8 +2,8 @@ import React from "react";
 
 import { CiWarning } from "react-icons/ci";
 
-import GoogleLogo from '../../assets/google.png'
-import IosLogo from '../../assets/ios.png'
+import GoogleLogo from '../../assets/google-play.png'
+import IosLogo from '../../assets/appstore.svg'
 
 const Dropown = ({ currentTab }) => {
   const data = {
@@ -128,9 +128,13 @@ const Dropown = ({ currentTab }) => {
                 <CiWarning size={20} color="red" />
               </div>
               <p className="6/12">{final_object.addons}</p>
-              <div className="w-10/12  h-24 border grid grid-cols-2">
-                <img src={IosLogo} alt='download on the app store' className="h-full"/>
-                <img src={GoogleLogo} alt='download on the google play store' className="h-full"/>
+              <div className="w-full  h-20  grid grid-cols-2 gap-2">
+                <div className="h-full">
+                <img src={IosLogo} alt='download on the app store' className="h-full object-cover"/>
+                </div>
+                <div className="h-full">
+                <img src={GoogleLogo} alt='download on the google play store' className="h-full object-cover"/>
+                </div>
               </div>
             </div>
           </div>
