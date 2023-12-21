@@ -12,6 +12,7 @@ import Sums from './component/sums/sums'
 
 
 import Section2 from './component/section2/section2'
+import Footer from './component/footer/footer'
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
       <Savvy />
        <Journey /> 
        <Sums />
+       <Footer />
     </div>
       )
 }

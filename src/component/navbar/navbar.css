@@ -1,6 +1,6 @@
 .nav{
     position: fixed;
-    animation: slide-down .5s ;
+    animation: slide-down .5s ease;
 }
 @keyframes slide-down{
     from{
@@ -14,7 +14,7 @@
 }
 
 .nav-remove{
-    animation: slide-up .7s ease-in;
+    animation: slide-up .5s ease;
 }
 @keyframes slide-up{
     from{
